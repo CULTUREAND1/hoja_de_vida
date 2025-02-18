@@ -7,13 +7,15 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Encabezado con imagen y nombre -->
     <header>
-        <img src="imagenes/WhatsApp Image 2025-02-17 at 1.34.33 PM.jpeg" alt="fotode perfil">
+        <img src="imagenes/WhatsApp Image 2025-02-17 at 1.34.33 PM.jpeg" alt="Foto de perfil de Sergio Yamith Morales Rodríguez" aria-label="Foto de perfil">
         <h1>Sergio Yamith Morales Rodríguez</h1>
         <p>Desarrollador de Software en Formación</p>
     </header>
     
-    <nav>
+    <!-- Menú de navegación con enlaces a secciones internas -->
+    <nav aria-label="Menú de navegación principal">
         <ul>
             <li><a href="#perfil">Perfil</a></li>
             <li><a href="#educacion">Educación</a></li>
@@ -23,30 +25,35 @@
         </ul>
     </nav>
     
+    <!-- Contenedor principal -->
     <main>
-        <aside>
-            <h2>Contacto</h2>
-            <p><strong>Ciudad</strong>📍 Bogotá, Colombia</p>
-            <p><strong>Email:</strong>📧 <a href="mailto:seryam180@gmail.com">seryam180@gmail.com</a></p>
+        <!-- Barra lateral con información de contacto -->
+        <aside aria-labelledby="contacto">
+            <h2 id="contacto">Contacto</h2>
+            <p><strong>Ciudad:</strong> 📍 Bogotá, Colombia</p>
+            <p><strong>Email:</strong> 📧 <a href="mailto:seryam180@gmail.com">seryam180@gmail.com</a></p>
             <p><strong>Teléfono:</strong> 📞 313-813-8619</p>
-            <p><strong>GitHub:</strong> <a href="https://github.com/CULTUREAND1/hoja_de_vida" target="_blank">github.com/tuusuario</a></p>
+            <p><strong>GitHub:</strong> <a href="https://github.com/CULTUREAND1/hoja_de_vida" target="_blank">github.com/CULTUREAND1</a></p>
         </aside>
         
-        <section id="perfil">
-            <h2>Sobre Mí</h2>
+        <!-- Sección de perfil profesional -->
+        <section id="perfil" aria-labelledby="perfil-titulo">
+            <h2 id="perfil-titulo">Sobre Mí</h2>
             <p>Estudiante de 4to semestre de Desarrollo de Software con conocimientos en bases de datos, desarrollo web y lógica de programación. Apasionado por la resolución de problemas y el aprendizaje continuo.</p>
         </section>
         
-        <section id="educacion">
-            <h2>Educación</h2>
+        <!-- Sección de educación -->
+        <section id="educacion" aria-labelledby="educacion-titulo">
+            <h2 id="educacion-titulo">Educación</h2>
             <ul>
                 <li><strong>Bachiller Académico</strong> - Colegio Toberín I.E.D. (2022)</li>
                 <li><strong>Tecnólogo en Desarrollo de Software</strong> - 4to semestre (2023 - Actualidad)</li>
             </ul>
         </section>
         
-        <section id="experiencia">
-            <h2>Experiencia</h2>
+        <!-- Sección de experiencia laboral -->
+        <section id="experiencia" aria-labelledby="experiencia-titulo">
+            <h2 id="experiencia-titulo">Experiencia</h2>
             <article>
                 <h3>Desarrollador Junior (Prácticas)</h3>
                 <p>Desarrollo de aplicaciones web utilizando HTML, CSS, JavaScript y MySQL. Trabajo en equipo y resolución de problemas en entornos ágiles.</p>
@@ -57,8 +64,9 @@
             </article>
         </section>
         
-        <section id="habilidades">
-            <h2>Habilidades Técnicas</h2>
+        <!-- Sección de habilidades técnicas -->
+        <section id="habilidades" aria-labelledby="habilidades-titulo">
+            <h2 id="habilidades-titulo">Habilidades Técnicas</h2>
             <ul>
                 <li>Desarrollo web: HTML, CSS, JavaScript</li>
                 <li>Bases de datos: MySQL</li>
@@ -68,9 +76,10 @@
         </section>
     </main>
     
+    <!-- Pie de página con enlaces relevantes -->
     <footer>
-        <p>Repositorio: <a href="#">GitHub (Pendiente)</a></p>
-        <a href="imagenes\DOC-20240515-WA0005..pdf" download class="btn-download">Descargar CV</a>
+        <p>Repositorio: <a href="#" aria-label="Repositorio en GitHub">GitHub (Pendiente)</a></p>
+        <a href="imagenes/DOC-20240515-WA0005.pdf" download class="btn-download" aria-label="Descargar CV en formato PDF">Descargar CV</a>
     </footer>
 </body>
 </html>
